@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	font-family: 'JetBrains Mono', monospace;
+	min-height: 100vh;
+}
+
+body {
+	min-height: 100vh;
+}
+
+/* Works on Firefox */
+* {
+	scrollbar-width: 0.5em;
+	scrollbar-color: blue rgba(255, 255, 255, 0);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgb(26, 26, 36);
+	border-radius: 20px;
+	border: 2px solid transparent;
+}
